@@ -25,6 +25,18 @@
 		ED2348CA1C3D64DF007D841D /* thunder.m4a in Resources */ = {isa = PBXBuildFile; fileRef = ED2348C11C3D64DF007D841D /* thunder.m4a */; };
 		ED2348CC1C3D6500007D841D /* rain1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ED2348CB1C3D6500007D841D /* rain1.mp4 */; };
 		ED2348CE1C3D6575007D841D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2348CD1C3D6575007D841D /* AVFoundation.framework */; };
+		ED4CC9051C4552E90024832C /* PopupWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9041C4552E90024832C /* PopupWindowView.m */; };
+		ED4CC9241C455DB20024832C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC90C1C455DB20024832C /* MASCompositeConstraint.m */; };
+		ED4CC9251C455DB20024832C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC90E1C455DB20024832C /* MASConstraint.m */; };
+		ED4CC9261C455DB20024832C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9111C455DB20024832C /* MASConstraintMaker.m */; };
+		ED4CC9271C455DB20024832C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9131C455DB20024832C /* MASLayoutConstraint.m */; };
+		ED4CC9281C455DB20024832C /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9171C455DB20024832C /* MASViewAttribute.m */; };
+		ED4CC9291C455DB20024832C /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9191C455DB20024832C /* MASViewConstraint.m */; };
+		ED4CC92A1C455DB20024832C /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC91B1C455DB20024832C /* NSArray+MASAdditions.m */; };
+		ED4CC92B1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC91E1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		ED4CC92C1C455DB20024832C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9201C455DB20024832C /* View+MASAdditions.m */; };
+		ED4CC92D1C455DB20024832C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CC9231C455DB20024832C /* ViewController+MASAdditions.m */; };
+		ED8461321C477C0900AD9A8E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8461311C477C0900AD9A8E /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +74,35 @@
 		ED2348C11C3D64DF007D841D /* thunder.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.m4a; sourceTree = "<group>"; };
 		ED2348CB1C3D6500007D841D /* rain1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain1.mp4; sourceTree = "<group>"; };
 		ED2348CD1C3D6575007D841D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ED4CC9031C4552E90024832C /* PopupWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupWindowView.h; sourceTree = "<group>"; };
+		ED4CC9041C4552E90024832C /* PopupWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupWindowView.m; sourceTree = "<group>"; };
+		ED4CC90B1C455DB10024832C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Library/Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		ED4CC90C1C455DB20024832C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Library/Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		ED4CC90D1C455DB20024832C /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Library/Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		ED4CC90E1C455DB20024832C /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Library/Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		ED4CC90F1C455DB20024832C /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Library/Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		ED4CC9101C455DB20024832C /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Library/Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		ED4CC9111C455DB20024832C /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Library/Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		ED4CC9121C455DB20024832C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Library/Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		ED4CC9131C455DB20024832C /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Library/Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		ED4CC9141C455DB20024832C /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Library/Masonry/Masonry.h; sourceTree = "<group>"; };
+		ED4CC9151C455DB20024832C /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Library/Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		ED4CC9161C455DB20024832C /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Library/Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		ED4CC9171C455DB20024832C /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Library/Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		ED4CC9181C455DB20024832C /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Library/Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		ED4CC9191C455DB20024832C /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Library/Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		ED4CC91A1C455DB20024832C /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Library/Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		ED4CC91B1C455DB20024832C /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Library/Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		ED4CC91C1C455DB20024832C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Library/Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		ED4CC91D1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Library/Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		ED4CC91E1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Library/Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		ED4CC91F1C455DB20024832C /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Library/Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		ED4CC9201C455DB20024832C /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Library/Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		ED4CC9211C455DB20024832C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Library/Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		ED4CC9221C455DB20024832C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Library/Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		ED4CC9231C455DB20024832C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Library/Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		ED4CC92E1C455E060024832C /* RainyMood-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RainyMood-Prefix.pch"; sourceTree = "<group>"; };
+		ED8461311C477C0900AD9A8E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8461321C477C0900AD9A8E /* AudioToolbox.framework in Frameworks */,
 				ED2348CE1C3D6575007D841D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +128,7 @@
 		ED2348861C3D6499007D841D = {
 			isa = PBXGroup;
 			children = (
+				ED8461311C477C0900AD9A8E /* AudioToolbox.framework */,
 				ED2348CD1C3D6575007D841D /* AVFoundation.framework */,
 				ED2348911C3D6499007D841D /* RainyMood */,
 				ED2348AB1C3D649A007D841D /* RainyMoodTests */,
@@ -105,15 +148,17 @@
 		ED2348911C3D6499007D841D /* RainyMood */ = {
 			isa = PBXGroup;
 			children = (
+				ED4CC9091C455CD30024832C /* Library */,
 				ED2348B71C3D64A9007D841D /* Audio */,
 				ED2348951C3D6499007D841D /* AppDelegate.h */,
 				ED2348961C3D6499007D841D /* AppDelegate.m */,
 				ED2348981C3D6499007D841D /* ViewController.h */,
 				ED2348991C3D6499007D841D /* ViewController.m */,
+				ED4CC9031C4552E90024832C /* PopupWindowView.h */,
+				ED4CC9041C4552E90024832C /* PopupWindowView.m */,
 				ED23489B1C3D6499007D841D /* Main.storyboard */,
 				ED23489E1C3D6499007D841D /* Assets.xcassets */,
 				ED2348A01C3D6499007D841D /* LaunchScreen.storyboard */,
-				ED2348A31C3D6499007D841D /* Info.plist */,
 				ED2348921C3D6499007D841D /* Supporting Files */,
 			);
 			path = RainyMood;
@@ -122,7 +167,9 @@
 		ED2348921C3D6499007D841D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED2348A31C3D6499007D841D /* Info.plist */,
 				ED2348931C3D6499007D841D /* main.m */,
+				ED4CC92E1C455E060024832C /* RainyMood-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +198,46 @@
 				ED2348C11C3D64DF007D841D /* thunder.m4a */,
 			);
 			name = Audio;
+			sourceTree = "<group>";
+		};
+		ED4CC9091C455CD30024832C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ED4CC90A1C455D530024832C /* Masonry */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		ED4CC90A1C455D530024832C /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				ED4CC90B1C455DB10024832C /* MASCompositeConstraint.h */,
+				ED4CC90C1C455DB20024832C /* MASCompositeConstraint.m */,
+				ED4CC90D1C455DB20024832C /* MASConstraint.h */,
+				ED4CC90E1C455DB20024832C /* MASConstraint.m */,
+				ED4CC90F1C455DB20024832C /* MASConstraint+Private.h */,
+				ED4CC9101C455DB20024832C /* MASConstraintMaker.h */,
+				ED4CC9111C455DB20024832C /* MASConstraintMaker.m */,
+				ED4CC9121C455DB20024832C /* MASLayoutConstraint.h */,
+				ED4CC9131C455DB20024832C /* MASLayoutConstraint.m */,
+				ED4CC9141C455DB20024832C /* Masonry.h */,
+				ED4CC9151C455DB20024832C /* MASUtilities.h */,
+				ED4CC9161C455DB20024832C /* MASViewAttribute.h */,
+				ED4CC9171C455DB20024832C /* MASViewAttribute.m */,
+				ED4CC9181C455DB20024832C /* MASViewConstraint.h */,
+				ED4CC9191C455DB20024832C /* MASViewConstraint.m */,
+				ED4CC91A1C455DB20024832C /* NSArray+MASAdditions.h */,
+				ED4CC91B1C455DB20024832C /* NSArray+MASAdditions.m */,
+				ED4CC91C1C455DB20024832C /* NSArray+MASShorthandAdditions.h */,
+				ED4CC91D1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.h */,
+				ED4CC91E1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.m */,
+				ED4CC91F1C455DB20024832C /* View+MASAdditions.h */,
+				ED4CC9201C455DB20024832C /* View+MASAdditions.m */,
+				ED4CC9211C455DB20024832C /* View+MASShorthandAdditions.h */,
+				ED4CC9221C455DB20024832C /* ViewController+MASAdditions.h */,
+				ED4CC9231C455DB20024832C /* ViewController+MASAdditions.m */,
+			);
+			name = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +289,11 @@
 				TargetAttributes = {
 					ED23488E1C3D6499007D841D = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					ED2348A71C3D6499007D841D = {
 						CreatedOnToolsVersion = 7.2;
@@ -263,9 +355,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4CC9261C455DB20024832C /* MASConstraintMaker.m in Sources */,
 				ED23489A1C3D6499007D841D /* ViewController.m in Sources */,
 				ED2348971C3D6499007D841D /* AppDelegate.m in Sources */,
+				ED4CC9251C455DB20024832C /* MASConstraint.m in Sources */,
+				ED4CC92D1C455DB20024832C /* ViewController+MASAdditions.m in Sources */,
+				ED4CC9271C455DB20024832C /* MASLayoutConstraint.m in Sources */,
+				ED4CC92A1C455DB20024832C /* NSArray+MASAdditions.m in Sources */,
+				ED4CC9291C455DB20024832C /* MASViewConstraint.m in Sources */,
+				ED4CC9281C455DB20024832C /* MASViewAttribute.m in Sources */,
+				ED4CC92C1C455DB20024832C /* View+MASAdditions.m in Sources */,
 				ED2348941C3D6499007D841D /* main.m in Sources */,
+				ED4CC9051C4552E90024832C /* PopupWindowView.m in Sources */,
+				ED4CC9241C455DB20024832C /* MASCompositeConstraint.m in Sources */,
+				ED4CC92B1C455DB20024832C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +496,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "RainyMood/RainyMood-Prefix.pch";
 				INFOPLIST_FILE = RainyMood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.shage.RainyMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,7 +509,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "RainyMood/RainyMood-Prefix.pch";
 				INFOPLIST_FILE = RainyMood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.shage.RainyMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +561,7 @@
 				ED2348B31C3D649A007D841D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED2348B41C3D649A007D841D /* Build configuration list for PBXNativeTarget "RainyMoodTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +570,7 @@
 				ED2348B61C3D649A007D841D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

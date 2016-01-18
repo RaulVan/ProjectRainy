@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C0A8F95544A50B44D025058FCA58EE08B2BC9F25",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "30E99B3DA956813EC660FA509C3BB663EF95A334" : 0,
+    "C0A8F95544A50B44D025058FCA58EE08B2BC9F25" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EA3C062A-0BA9-40A4-8EB2-390409B5F019",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "30E99B3DA956813EC660FA509C3BB663EF95A334" : "",
+    "C0A8F95544A50B44D025058FCA58EE08B2BC9F25" : "ProjectRainy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RainyMood",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RainyMood\/RainyMood.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RaulVan\/iOSDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30E99B3DA956813EC660FA509C3BB663EF95A334"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RaulVan\/ProjectRainy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0A8F95544A50B44D025058FCA58EE08B2BC9F25"
+    }
+  ]
+}

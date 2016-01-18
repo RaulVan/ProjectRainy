@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryMultiRoute
+//                                     withOptions:AVAudioSessionCategoryOptionDuckOthers
+//                                           error:nil];
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
+
     return YES;
 }
 
@@ -28,6 +33,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+   
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

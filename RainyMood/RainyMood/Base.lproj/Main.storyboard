@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8BI-CY-Sfe">
-                                <rect key="frame" x="148" y="157" width="118" height="31"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BJs-2Q-cQ7">
-                                <rect key="frame" x="148" y="224" width="118" height="31"/>
-                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gz-dl-d5h">
+                                <rect key="frame" x="120" y="470" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ot6-ZN-Nlk"/>
+                                </constraints>
+                                <state key="normal" title="btn Show">
+                                    <color key="titleColor" red="1" green="0.26288102479999997" blue="0.38795821600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="We0-aH-6cz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7gz-dl-d5h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="8o6-KA-Ul8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7gz-dl-d5h" secondAttribute="bottom" constant="100" id="QqM-1e-UqZ"/>
+                            <constraint firstItem="7gz-dl-d5h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="243" id="hd5-sI-g33"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hd5-sI-g33"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="btn_Show" destination="8bC-Xf-vdC" id="kCm-UB-Igy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

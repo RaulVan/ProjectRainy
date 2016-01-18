@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "PopupWindowView.h"
 
 @interface ViewController ()<AVAudioPlayerDelegate>
 
@@ -20,15 +22,34 @@
 @property (nonatomic, strong) AVAudioPlayer *audioPlayerThunder;
 
 
+@property (strong, nonatomic) IBOutlet UIView *btn_Show;
+
+@property (strong, nonatomic) UIView *bgView;
+
+
 @end
 
 @implementation ViewController
+
+
+
+-(void)loadView
+{
+    [super loadView];
+    _bgView =[[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [self.view addSubview:_bgView];
+    [self.view sendSubviewToBack:_bgView];
+}
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     NSURL *fileURL1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"rain1.mp4" ofType:nil]];
     [self createVideoPlayer:fileURL1];
+    [self multedOnOff];
+    [self playerAudio];
     
     
 }
@@ -36,12 +57,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self playerAudio];
+    
+    
+}
+- (IBAction)btnShow:(id)sender {
+    PopupWindowView *view = [[PopupWindowView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [[UIApplication sharedApplication].keyWindow addSubview:view];
+    
 }
 
 - (void)playerAudio
 {
-    NSString *path =  [[NSBundle mainBundle] pathForResource:@"rain1" ofType:@"m4a"];
+    NSString *path =  [[NSBundle mainBundle] pathForResource:@"rain5" ofType:@"m4a"];
     self.audioPlayerRain1 = [[AVAudioPlayer alloc]initWithData:[NSData dataWithContentsOfFile:path] error:nil];
     self.audioPlayerRain1.numberOfLoops = 0;
     self.audioPlayerRain1.volume = 1;
@@ -67,7 +94,7 @@
     playerLayer.videoGravity = AVLayerVideoGravityResize;
     playerLayer.frame = [UIScreen mainScreen].bounds;
     
-    [self.view.layer addSublayer:playerLayer];
+    [self.bgView.layer addSublayer:playerLayer];
     [self.player play];
     
     
@@ -76,13 +103,22 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
-    
+    //    [[NSNotificationCenter]]
 }
 
 #pragma mark - observer of player
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     
 }
+
+- (void)multedOnOff
+{
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+    [audioSession setActive:YES error:nil];
+    
+}
+
 
 // 视频循环播放
 - (void)moviePlayDidEnd:(NSNotification*)notification{
@@ -103,14 +139,31 @@
 - (void)videoPlayWillEnterForeground:(NSNotification *)notice
 {
     [self.player play];
-    NSLog(@"play");
+    NSLog(@"Play");
+    [self.audioPlayerRain1 play];
+    [self.audioPlayerThunder play];
+    
 }
 
 - (void)videoPlayDidEnterBackground:(NSNotification *)notice
 {
     [self.player pause];
-    NSLog(@"pause");
+    NSLog(@"Play");
+//    [self.audioPlayerRain1 play];
+//    [self.audioPlayerThunder play];
 }
+
+
+-(void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
+{
+    
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {
